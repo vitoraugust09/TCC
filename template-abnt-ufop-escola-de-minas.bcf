@@ -2457,15 +2457,20 @@
     <bcf:citekey order="1" intorder="1">shuster1993</bcf:citekey>
     <bcf:citekey order="2" intorder="1">ferreira2008</bcf:citekey>
     <bcf:citekey order="3" intorder="1">Wertz2012</bcf:citekey>
-    <bcf:citekey order="4" intorder="1">stanford2017quaternions</bcf:citekey>
-    <bcf:citekey order="5" intorder="1">tavares2017</bcf:citekey>
-    <bcf:citekey order="6" intorder="1">Polulu2024</bcf:citekey>
-    <bcf:citekeycount count="0">shuster1993</bcf:citekeycount>
-    <bcf:citekeycount count="0">ferreira2008</bcf:citekeycount>
-    <bcf:citekeycount count="0">Wertz2012</bcf:citekeycount>
-    <bcf:citekeycount count="0">stanford2017quaternions</bcf:citekeycount>
-    <bcf:citekeycount count="0">tavares2017</bcf:citekeycount>
-    <bcf:citekeycount count="0">Polulu2024</bcf:citekeycount>
+    <bcf:citekey order="4" intorder="1">YANG2012198</bcf:citekey>
+    <bcf:citekey order="5" intorder="1">jia2013quaternions</bcf:citekey>
+    <bcf:citekey order="6" intorder="1">YANG2012198</bcf:citekey>
+    <bcf:citekey order="7" intorder="1">silva2016</bcf:citekey>
+    <bcf:citekey order="8" intorder="1">tavares2017</bcf:citekey>
+    <bcf:citekey order="9" intorder="1">Polulu2024</bcf:citekey>
+    <bcf:citekeycount count="1">shuster1993</bcf:citekeycount>
+    <bcf:citekeycount count="1">ferreira2008</bcf:citekeycount>
+    <bcf:citekeycount count="1">Wertz2012</bcf:citekeycount>
+    <bcf:citekeycount count="2">YANG2012198</bcf:citekeycount>
+    <bcf:citekeycount count="1">jia2013quaternions</bcf:citekeycount>
+    <bcf:citekeycount count="1">silva2016</bcf:citekeycount>
+    <bcf:citekeycount count="1">tavares2017</bcf:citekeycount>
+    <bcf:citekeycount count="1">Polulu2024</bcf:citekeycount>
   </bcf:section>
   <!-- SORTING TEMPLATES -->
   <bcf:sortingtemplate name="nty">

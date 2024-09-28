@@ -1,4 +1,4 @@
-This is LuaHBTeX, Version 1.18.0 (TeX Live 2024)  (format=lualatex 2024.8.13)  26 SEP 2024 14:23
+This is LuaHBTeX, Version 1.18.0 (TeX Live 2024)  (format=lualatex 2024.8.13)  27 SEP 2024 21:11
  restricted system commands enabled.
 **template-abnt-ufop-escola-de-minas.tex
 (./template-abnt-ufop-escola-de-minas.tex
@@ -1669,20 +1669,11 @@ Package luatex.def Info: folha-de-aprovacao.pdf , page1 used on input line 243.
 [11
 
 ]
-
-LaTeX Warning: Citation 'shuster1993' on page 12 undefined on input line 345.
-
-
-LaTeX Warning: Citation 'ferreira2008' on page 12 undefined on input line 345.
-
-<figuras/Sputnik.jpg, id=171, 242.1045pt x 240.9pt>
+<figuras/Sputnik.jpg, id=175, 242.1045pt x 240.9pt>
 File: figuras/Sputnik.jpg Graphic file (type jpg)
 <use figuras/Sputnik.jpg>
-Package luatex.def Info: figuras/Sputnik.jpg  used on input line 350.
+Package luatex.def Info: figuras/Sputnik.jpg  used on input line 351.
 (luatex.def)             Requested size: 145.26382pt x 144.5411pt.
-
-LaTeX Warning: Citation 'Wertz2012' on page 12 undefined on input line 357.
-
 
 
 [12
@@ -1690,34 +1681,25 @@ LaTeX Warning: Citation 'Wertz2012' on page 12 undefined on input line 357.
 
 <./figuras/Sputnik.jpg>]
 
-LaTeX Warning: Citation 'stanford2017quaternions' on page 13 undefined on input
- line 361.
-
-
-Overfull \hbox (25.48032pt too wide) in paragraph at lines 361--362
-\TU/lmr/m/n/12 eixo de ro-ta-ção e o ân-gulo po-dem ser re-cu-pe-ra-dos de fo
-rma tri-vial”([]). 
- []
-
-
-LaTeX Warning: Citation 'tavares2017' on page 13 undefined on input line 374.
-
-
-
 [13]
-<figuras/foto1.png, id=186, 599.23875pt x 472.76625pt>
+<figuras/foto1.png, id=210, 599.23875pt x 472.76625pt>
 File: figuras/foto1.png Graphic file (type png)
 <use figuras/foto1.png>
-Package luatex.def Info: figuras/foto1.png  used on input line 383.
+Package luatex.def Info: figuras/foto1.png  used on input line 384.
 (luatex.def)             Requested size: 227.5pt x 179.4799pt.
-<figuras/foto2.png, id=187, 603.75563pt x 477.28313pt>
+<figuras/foto2.png, id=211, 603.75563pt x 477.28313pt>
 File: figuras/foto2.png Graphic file (type png)
 <use figuras/foto2.png>
-Package luatex.def Info: figuras/foto2.png  used on input line 390.
+Package luatex.def Info: figuras/foto2.png  used on input line 391.
 (luatex.def)             Requested size: 227.5pt x 179.84009pt.
 
 
 [14<./figuras/foto1.png><./figuras/foto2.png>]
+
+LaTeX Warning: Reference `cap:revisao-de-literatura' on page 15 undefined on in
+put line 418.
+
+
 
 [15]
 
@@ -1725,25 +1707,18 @@ Package luatex.def Info: figuras/foto2.png  used on input line 390.
 
 ]
 
+LaTeX Warning: No positions in optional float specifier.
+               Default added (so using `tbp') on input line 456.
+
+
+
 [17
 
 ]
-
-LaTeX Warning: No positions in optional float specifier.
-               Default added (so using `tbp') on input line 453.
-
-
-
-[18
-
-]
-
-LaTeX Warning: Citation 'Polulu2024' on page 19 undefined on input line 476.
-
-<figuras/altimu.jpg, id=220, 466.25807pt x 373.00645pt>
+<figuras/altimu.jpg, id=244, 466.25807pt x 373.00645pt>
 File: figuras/altimu.jpg Graphic file (type jpg)
 <use figuras/altimu.jpg>
-Package luatex.def Info: figuras/altimu.jpg  used on input line 480.
+Package luatex.def Info: figuras/altimu.jpg  used on input line 483.
 (luatex.def)             Requested size: 227.5pt x 182.0007pt.
 Package microtype Info: Loading generic protrusion settings for font family
 (microtype)             `lmtt' (encoding: TU).
@@ -1751,33 +1726,21 @@ Package microtype Info: Loading generic protrusion settings for font family
 (microtype)             See the microtype manual for details.
 
 
-[19<./figuras/altimu.jpg>]
+[18<./figuras/altimu.jpg>]
 
-[20]
+[19]
+
+[20
+
+]
 
 [21
-
-]
-
-LaTeX Warning: Empty bibliography on input line 526.
-
-
-
-[22
-
-]
-
-[23
-
-]
-
-[24
 
 ]
 No file template-abnt-ufop-escola-de-minas.ind.
 
 
-[25
+[22
 
 ]
 \tf@lof=\write6
@@ -1810,33 +1773,43 @@ n.xml'.
 )
 
 Here is how much of LuaTeX's memory you used:
- 34241 strings out of 475910
+ 34413 strings out of 475910
  125081,1977958 words of node,token memory allocated
- 1358 words of node memory still in use:
-   8 hlist, 2 vlist, 2 rule, 1 local_par, 8 glue, 4 kern, 1 penalty, 3 glyph, 16
- attribute, 204 glue_spec, 10 attribute_list, 2 write nodes
-   avail lists: 1:2,2:1059,3:235,4:151,5:327,6:62,7:6766,8:35,9:411,10:21,11:907
+ 1382 words of node memory still in use:
+   8 hlist, 2 vlist, 2 rule, 1 local_par, 8 glue, 4 kern, 1 penalty, 3 glyph, 20
+ attribute, 204 glue_spec, 12 attribute_list, 2 write, 2 pdf_action nodes
+   avail lists: 1:1,2:1067,3:576,4:147,5:328,6:77,7:6906,8:67,9:409,10:21,11:943
 ,12:1
- 56164 multiletter control sequences out of 65536+600000
- 82 fonts using 25082607 bytes
- 99i,20n,102p,1249b,2626s stack positions out of 10000i,1000n,20000p,200000b,200000s
-<d:/texlive/2024/texmf-dist/fonts/opentype/public/lm/lmmono10-regular.otf><d:/te
-xlive/2024/texmf-dist/fonts/opentype/public/lm/lmroman10-bolditalic.otf><d:/texl
-ive/2024/texmf-dist/fonts/opentype/public/lm/lmroman10-italic.otf><d:/texlive/20
-24/texmf-dist/fonts/opentype/public/lm/lmroman12-italic.otf><d:/texlive/2024/tex
-mf-dist/fonts/opentype/public/lm-math/latinmodern-math.otf><d:/texlive/2024/texm
-f-dist/fonts/opentype/public/lm/lmroman12-bold.otf><d:/texlive/2024/texmf-dist/f
-onts/opentype/public/lm/lmroman10-regular.otf><d:/texlive/2024/texmf-dist/fonts/
-opentype/public/lm/lmromanslant10-regular.otf><d:/texlive/2024/texmf-dist/fonts/
-opentype/public/lm/lmsans17-regular.otf><d:/texlive/2024/texmf-dist/fonts/openty
-pe/public/lm/lmsans10-bold.otf><d:/texlive/2024/texmf-dist/fonts/opentype/public
-/lm/lmsans12-regular.otf><d:/texlive/2024/texmf-dist/fonts/opentype/public/lm/lm
-roman12-regular.otf>
-Output written on template-abnt-ufop-escola-de-minas.pdf (26 pages, 1478636 byte
+ 56330 multiletter control sequences out of 65536+600000
+ 84 fonts using 25338963 bytes
+ 99i,20n,102p,1394b,2626s stack positions out of 10000i,1000n,20000p,200000b,200000s
+
+warning  (pdf backend): unreferenced destination with name 'appendix.anexochapba
+ck.2'
+
+warning  (pdf backend): unreferenced destination with name 'appendix.anexochapba
+ck.1'
+
+warning  (pdf backend): unreferenced destination with name 'appendix.A'
+<d:/texlive/2024/texmf-dist/fonts/opentype/public/lm/lmmono12-regular.otf><d:/te
+xlive/2024/texmf-dist/fonts/opentype/public/lm/lmmono10-regular.otf><d:/texlive/
+2024/texmf-dist/fonts/opentype/public/lm/lmroman10-bolditalic.otf><d:/texlive/20
+24/texmf-dist/fonts/opentype/public/lm/lmroman10-italic.otf><d:/texlive/2024/tex
+mf-dist/fonts/opentype/public/lm/lmroman12-italic.otf><d:/texlive/2024/texmf-dis
+t/fonts/opentype/public/lm/lmromancaps10-regular.otf><d:/texlive/2024/texmf-dist
+/fonts/opentype/public/lm-math/latinmodern-math.otf><d:/texlive/2024/texmf-dist/
+fonts/opentype/public/lm/lmroman12-bold.otf><d:/texlive/2024/texmf-dist/fonts/op
+entype/public/lm/lmroman10-regular.otf><d:/texlive/2024/texmf-dist/fonts/opentyp
+e/public/lm/lmromanslant10-regular.otf><d:/texlive/2024/texmf-dist/fonts/opentyp
+e/public/lm/lmsans17-regular.otf><d:/texlive/2024/texmf-dist/fonts/opentype/publ
+ic/lm/lmsans10-bold.otf><d:/texlive/2024/texmf-dist/fonts/opentype/public/lm/lms
+ans12-regular.otf><d:/texlive/2024/texmf-dist/fonts/opentype/public/lm/lmroman12
+-regular.otf>
+Output written on template-abnt-ufop-escola-de-minas.pdf (23 pages, 1493130 byte
 s).
 
-PDF statistics: 431 PDF objects out of 1000 (max. 8388607)
- 341 compressed objects within 4 object streams
- 79 named destinations out of 1000 (max. 131072)
- 249 words of extra memory for PDF output out of 10000 (max. 100000000)
+PDF statistics: 468 PDF objects out of 1000 (max. 8388607)
+ 375 compressed objects within 4 object streams
+ 85 named destinations out of 1000 (max. 131072)
+ 225 words of extra memory for PDF output out of 10000 (max. 100000000)
 

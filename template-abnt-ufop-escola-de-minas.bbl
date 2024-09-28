@@ -1,0 +1,301 @@
+% $ biblatex auxiliary file $
+% $ biblatex bbl format version 3.3 $
+% Do not modify the above lines!
+%
+% This is an auxiliary file used by the 'biblatex' package.
+% This file may safely be deleted. It will be recreated by
+% biber as required.
+%
+\begingroup
+\makeatletter
+\@ifundefined{ver@biblatex.sty}
+  {\@latex@error
+     {Missing 'biblatex' package}
+     {The bibliography requires the 'biblatex' package.}
+      \aftergroup\endinput}
+  {}
+\endgroup
+
+
+\refsection{0}
+  \datalist[entry]{nty/global//global/global/global}
+    \entry{ferreira2008}{article}{}{1}
+      \name{author}{6}{}{%
+        {{un=0,uniquepart=base,hash=6022830f5d62999bd0630e86ccc84c02}{%
+           family={Ferreira},
+           familyi={F\bibinitperiod},
+           given={Alexandre\bibnamedelima J.},
+           giveni={A\bibinitperiod\bibinitdelim J\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=b911020bcd9a68a3b40d2a42921847e4}{%
+           family={Castro},
+           familyi={C\bibinitperiod},
+           given={João\bibnamedelimb Carlos\bibnamedelima V.},
+           giveni={J\bibinitperiod\bibinitdelim C\bibinitperiod\bibinitdelim V\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=66b3903f3402bf1344392e413923c2c9}{%
+           family={Martins-Filho},
+           familyi={M\bibinithyphendelim F\bibinitperiod},
+           given={Luiz\bibnamedelima S.},
+           giveni={L\bibinitperiod\bibinitdelim S\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=ac1077da728276fb618c1ac13d711b9d}{%
+           family={Duarte},
+           familyi={D\bibinitperiod},
+           given={Ricardo\bibnamedelima O.},
+           giveni={R\bibinitperiod\bibinitdelim O\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=e1c0f7d7ec2300b90a5f8797707fd68e}{%
+           family={Prado},
+           familyi={P\bibinitperiod},
+           given={Ricardo\bibnamedelima S.},
+           giveni={R\bibinitperiod\bibinitdelim S\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=ac9b6d7c7065f14dd3f175f90e033f40}{%
+           family={Rocha},
+           familyi={R\bibinitperiod},
+           given={Ronilson},
+           giveni={R\bibinitperiod},
+           givenun=0}}%
+      }
+      \list{publisher}{1}{%
+        {ISSN 0103-944X}%
+      }
+      \strng{namehash}{29d96d61d19d8f442c4626705001acf1}
+      \strng{fullhash}{c88a6009e91c751d8b0e9fc673f0ba15}
+      \strng{fullhashraw}{c88a6009e91c751d8b0e9fc673f0ba15}
+      \strng{bibnamehash}{29d96d61d19d8f442c4626705001acf1}
+      \strng{authorbibnamehash}{29d96d61d19d8f442c4626705001acf1}
+      \strng{authornamehash}{29d96d61d19d8f442c4626705001acf1}
+      \strng{authorfullhash}{c88a6009e91c751d8b0e9fc673f0ba15}
+      \strng{authorfullhashraw}{c88a6009e91c751d8b0e9fc673f0ba15}
+      \field{sortinit}{F}
+      \field{sortinithash}{2638baaa20439f1b5a8f80c6c08a13b4}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{journaltitle}{Ciência \& Engenharia}
+      \field{number}{1/2}
+      \field{title}{Procedimento experimental para a determinação de atitude de satélites artificiais}
+      \field{volume}{17}
+      \field{year}{2008}
+      \field{pages}{57\bibrangedash 64}
+      \range{pages}{8}
+    \endentry
+    \entry{jia2013quaternions}{misc}{}{1}
+      \name{author}{1}{}{%
+        {{un=0,uniquepart=base,hash=67510a14b40f44112ef5a37d6b07fe09}{%
+           family={Jia},
+           familyi={J\bibinitperiod},
+           given={Yan-Bin},
+           giveni={Y\bibinithyphendelim B\bibinitperiod},
+           givenun=0}}%
+      }
+      \strng{namehash}{67510a14b40f44112ef5a37d6b07fe09}
+      \strng{fullhash}{67510a14b40f44112ef5a37d6b07fe09}
+      \strng{fullhashraw}{67510a14b40f44112ef5a37d6b07fe09}
+      \strng{bibnamehash}{67510a14b40f44112ef5a37d6b07fe09}
+      \strng{authorbibnamehash}{67510a14b40f44112ef5a37d6b07fe09}
+      \strng{authornamehash}{67510a14b40f44112ef5a37d6b07fe09}
+      \strng{authorfullhash}{67510a14b40f44112ef5a37d6b07fe09}
+      \strng{authorfullhashraw}{67510a14b40f44112ef5a37d6b07fe09}
+      \field{sortinit}{J}
+      \field{sortinithash}{b2f54a9081ace9966a7cb9413811edb4}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{month}{9}
+      \field{note}{Com S 477/577 Notes}
+      \field{title}{Quaternions and Rotations}
+      \field{year}{2013}
+    \endentry
+    \entry{Polulu2024}{online}{}{1}
+      \field{sortinit}{P}
+      \field{sortinithash}{ff3bcf24f47321b42cb156c2cc8a8422}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{}
+      \field{labeltitlesource}{title}
+      \field{title}{Polulu}
+      \field{year}{2024}
+      \field{dateera}{ce}
+      \verb{urlraw}
+      \verb https://www.pololu.com/product/2469
+      \endverb
+      \verb{url}
+      \verb https://www.pololu.com/product/2469
+      \endverb
+    \endentry
+    \entry{shuster1993}{article}{}{1}
+      \name{author}{1}{}{%
+        {{un=0,uniquepart=base,hash=b7b02c15ce293ad04847a75e09962eb2}{%
+           family={Shuster},
+           familyi={S\bibinitperiod},
+           given={M.\bibnamedelimi D.},
+           giveni={M\bibinitperiod\bibinitdelim D\bibinitperiod},
+           givenun=0}}%
+      }
+      \strng{namehash}{b7b02c15ce293ad04847a75e09962eb2}
+      \strng{fullhash}{b7b02c15ce293ad04847a75e09962eb2}
+      \strng{fullhashraw}{b7b02c15ce293ad04847a75e09962eb2}
+      \strng{bibnamehash}{b7b02c15ce293ad04847a75e09962eb2}
+      \strng{authorbibnamehash}{b7b02c15ce293ad04847a75e09962eb2}
+      \strng{authornamehash}{b7b02c15ce293ad04847a75e09962eb2}
+      \strng{authorfullhash}{b7b02c15ce293ad04847a75e09962eb2}
+      \strng{authorfullhashraw}{b7b02c15ce293ad04847a75e09962eb2}
+      \field{sortinit}{S}
+      \field{sortinithash}{b164b07b29984b41daf1e85279fbc5ab}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{journaltitle}{Journal of Guidance and Control}
+      \field{number}{4}
+      \field{title}{A survey of attitude representations}
+      \field{volume}{41}
+      \field{year}{1993}
+      \field{pages}{439\bibrangedash 517}
+      \range{pages}{79}
+    \endentry
+    \entry{silva2016}{thesis}{}{}
+      \name{author}{1}{}{%
+        {{un=0,uniquepart=base,hash=3dddd0b1a6d33b46865acab3f0e61834}{%
+           family={Silva},
+           familyi={S\bibinitperiod},
+           given={W.\bibnamedelimi R.},
+           giveni={W\bibinitperiod\bibinitdelim R\bibinitperiod},
+           givenun=0}}%
+      }
+      \strng{namehash}{3dddd0b1a6d33b46865acab3f0e61834}
+      \strng{fullhash}{3dddd0b1a6d33b46865acab3f0e61834}
+      \strng{fullhashraw}{3dddd0b1a6d33b46865acab3f0e61834}
+      \strng{bibnamehash}{3dddd0b1a6d33b46865acab3f0e61834}
+      \strng{authorbibnamehash}{3dddd0b1a6d33b46865acab3f0e61834}
+      \strng{authornamehash}{3dddd0b1a6d33b46865acab3f0e61834}
+      \strng{authorfullhash}{3dddd0b1a6d33b46865acab3f0e61834}
+      \strng{authorfullhashraw}{3dddd0b1a6d33b46865acab3f0e61834}
+      \field{sortinit}{S}
+      \field{sortinithash}{b164b07b29984b41daf1e85279fbc5ab}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{bookpagination}{sheet}
+      \field{title}{Filtro H-infinito estendido de segunda ordem e filtro de partículas regularizado com "roughening" aplicados na estimativa de atitude de satélites artificiais}
+      \field{year}{2016}
+    \endentry
+    \entry{tavares2017}{thesis}{}{1}
+      \name{author}{1}{}{%
+        {{un=0,uniquepart=base,hash=7870717270bce8cdbe25fa42fabefd9a}{%
+           family={Tavares},
+           familyi={T\bibinitperiod},
+           given={Felipe\bibnamedelima Oliveira},
+           giveni={F\bibinitperiod\bibinitdelim O\bibinitperiod},
+           givenun=0}}%
+      }
+      \list{institution}{1}{%
+        {Universidade Federal de Ouro Preto}%
+      }
+      \list{location}{1}{%
+        {Ouro Preto}%
+      }
+      \strng{namehash}{7870717270bce8cdbe25fa42fabefd9a}
+      \strng{fullhash}{7870717270bce8cdbe25fa42fabefd9a}
+      \strng{fullhashraw}{7870717270bce8cdbe25fa42fabefd9a}
+      \strng{bibnamehash}{7870717270bce8cdbe25fa42fabefd9a}
+      \strng{authorbibnamehash}{7870717270bce8cdbe25fa42fabefd9a}
+      \strng{authornamehash}{7870717270bce8cdbe25fa42fabefd9a}
+      \strng{authorfullhash}{7870717270bce8cdbe25fa42fabefd9a}
+      \strng{authorfullhashraw}{7870717270bce8cdbe25fa42fabefd9a}
+      \field{sortinit}{T}
+      \field{sortinithash}{9af77f0292593c26bde9a56e688eaee9}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{bookpagination}{sheet}
+      \field{note}{Graduação em Engenharia de Controle e Automação}
+      \field{title}{Desenvolvimento de plataforma de testes para determinação de atitude baseado em acelerômetros e magnetômetros}
+      \field{type}{Monografia}
+      \field{year}{2017}
+      \field{pages}{66}
+      \range{pages}{1}
+    \endentry
+    \entry{Wertz2012}{book}{}{1}
+      \name{author}{1}{}{%
+        {{un=0,uniquepart=base,hash=44c6d1a811e1293f490371afda50288e}{%
+           family={Wertz},
+           familyi={W\bibinitperiod},
+           given={J.\bibnamedelimi R.},
+           giveni={J\bibinitperiod\bibinitdelim R\bibinitperiod},
+           givenun=0}}%
+      }
+      \list{publisher}{1}{%
+        {Springer Science \& Business Media}%
+      }
+      \strng{namehash}{44c6d1a811e1293f490371afda50288e}
+      \strng{fullhash}{44c6d1a811e1293f490371afda50288e}
+      \strng{fullhashraw}{44c6d1a811e1293f490371afda50288e}
+      \strng{bibnamehash}{44c6d1a811e1293f490371afda50288e}
+      \strng{authorbibnamehash}{44c6d1a811e1293f490371afda50288e}
+      \strng{authornamehash}{44c6d1a811e1293f490371afda50288e}
+      \strng{authorfullhash}{44c6d1a811e1293f490371afda50288e}
+      \strng{authorfullhashraw}{44c6d1a811e1293f490371afda50288e}
+      \field{sortinit}{W}
+      \field{sortinithash}{4315d78024d0cea9b57a0c6f0e35ed0d}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{title}{Spacecraft Attitude Determination and Control}
+      \field{volume}{73}
+      \field{year}{2012}
+    \endentry
+    \entry{YANG2012198}{article}{}{2}
+      \name{author}{1}{}{%
+        {{un=0,uniquepart=base,hash=865de0ad624b442a018417bf6b85083e}{%
+           family={Yang},
+           familyi={Y\bibinitperiod},
+           given={Y.},
+           giveni={Y\bibinitperiod},
+           givenun=0}}%
+      }
+      \strng{namehash}{865de0ad624b442a018417bf6b85083e}
+      \strng{fullhash}{865de0ad624b442a018417bf6b85083e}
+      \strng{fullhashraw}{865de0ad624b442a018417bf6b85083e}
+      \strng{bibnamehash}{865de0ad624b442a018417bf6b85083e}
+      \strng{authorbibnamehash}{865de0ad624b442a018417bf6b85083e}
+      \strng{authornamehash}{865de0ad624b442a018417bf6b85083e}
+      \strng{authorfullhash}{865de0ad624b442a018417bf6b85083e}
+      \strng{authorfullhashraw}{865de0ad624b442a018417bf6b85083e}
+      \field{sortinit}{Y}
+      \field{sortinithash}{fd67ad5a9ef0f7456bdd9aab10fe1495}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{abstract}{In this review, we discuss in detail the quaternion based methods for spacecraft attitude determination and control. We summarize some recent developments on this research area. We start with some brief but complete discussions on the theory of quaternion which will be sufficient for the discussion in the remaining part of the review. We review the progress of quaternion based attitude determination which has been well recognized and achieved great success by using Newton’s method. We also present a different and more elegant treatment on an analytic solution to Wahba’s problem. For quaternion based control system design, we focus on some recently developed reduced quaternion models which use only vector component of the quaternion in the state space models. We discuss some new design method that has the following features: (a) it has an analytic solution of LQR, and (b) the designed system reduces disturbance effect, global stabilizes the nonlinear spacecraft system, and is robust to the modeling uncertainty. The presentation of the review is self-complete. It includes all the background information that is needed to understand the development involving the system modeling, the attitude determination, and the attitude control system design methods.}
+      \field{issn}{1367-5788}
+      \field{journaltitle}{Annual Reviews in Control}
+      \field{number}{2}
+      \field{title}{Spacecraft attitude determination and control: Quaternion based method}
+      \field{volume}{36}
+      \field{year}{2012}
+      \field{pages}{198\bibrangedash 219}
+      \range{pages}{22}
+      \verb{doi}
+      \verb https://doi.org/10.1016/j.arcontrol.2012.09.003
+      \endverb
+      \verb{urlraw}
+      \verb https://www.sciencedirect.com/science/article/pii/S1367578812000387
+      \endverb
+      \verb{url}
+      \verb https://www.sciencedirect.com/science/article/pii/S1367578812000387
+      \endverb
+      \keyw{Reduced quaternion model,Spacecraft,Attitude determination,Control}
+    \endentry
+  \enddatalist
+\endrefsection
+\endinput
+

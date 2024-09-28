@@ -302,8 +302,8 @@
 % ---
 
 \begin{siglas}
-  \item[ABNT] Associação Brasileira de Normas Técnicas
-  \item[abnTeX] ABsurdas Normas para TeX
+  \item[CI] Circuito Integrado 
+  \item[IMU] Unidade de Medição Inercial
 \end{siglas}
 % ---
 
@@ -342,23 +342,24 @@
 % --
 \chapter[Introdução]{Introdução}
 
-Os satélites artificiais têm como função realizar tarefas de interação com a terra, corpos celestes, ou outros artefatos espaciais construídos pelo homem. Essas tarefas são executadas através de instrumentos e dispositivos que devem ser posicionados e orientados de maneira apropriada, permitindo a obtenção do desempenho desejado \cite{shuster1993} \textit{apud} \cite{ferreira2008}. Um exemplo marcante de satélite artificial, que simbolizou o início da Era Espacial, foi o Sputnik 1, visto na figura \ref{fig:sputnik}. Ele se tornou o primeiro satélite a ser lançado ao espaço, um marco alcançado após o fim da Segunda Guerra Mundial
 
-% uma Sputinik1
+
+Os satélites artificiais desempenham um papel fundamental em interações com a Terra, corpos celestes ou outros artefatos espaciais, realizando tarefas essenciais por meio de instrumentos e dispositivos que precisam ser posicionados e orientados corretamente para garantir o desempenho ideal \cite{shuster1993} \textit{apud} \cite{ferreira2008}. Um exemplo notável desse tipo de tecnologia é o Sputnik 1, o primeiro satélite lançado ao espaço, que marcou o início da Era Espacial após o fim da Segunda Guerra Mundial (ver Figura \ref{fig:sputnik}). 
+
 \begin{figure}[h]
 	\centering
-	\includegraphics[scale=0.6]{Sputnik.jpg} % teste os valores
+	\includegraphics[scale=0.6]{Sputnik.jpg} % ajuste o valor do scale conforme necessário
 	\caption[Sputnik 1 antes do lançamento em outubro de 1957]{Sputnik 1 antes do lançamento em outubro de 1957}
 	\label{fig:sputnik}
 \end{figure}
 
-A atitude de um satélite, que corresponde à sua orientação no espaço, é um elemento crucial para o sucesso das missões espaciais modernas. Com o aumento da demanda por satélites dedicados a diversas finalidades, como comunicação, monitoramento ambiental, sensoriamento remoto e pesquisa científica, o controle e a determinação precisa da atitude se tornaram atividades indispensáveis. Essas funções garantem a eficiência e a precisão das operações, sendo fundamentais para o cumprimento dos objetivos propostos por essas missões, especialmente em um cenário de crescente complexidade tecnológica e competitividade no setor aeroespacial.
+A determinação de atitude, que corresponde à orientação de um veículo espacial em relação a um referencial inercial ou a um objeto de interesse, como a Terra, é um processo essencial para o controle dessas missões. Este processo, normalmente realizado por sensores de alta precisão e algoritmos sofisticados de processamento de dados, garante que o satélite se mantenha na posição correta. A precisão da determinação de atitude depende da combinação dos métodos de processamento aplicados e do hardware utilizado. Em resumo, determinar a atitude de um satélite significa calcular sua matriz de atitude em relação a um referencial previamente estabelecido \cite{Wertz2012}.
 
-A determinação de atitude é um processo computadorizado da orientação de um veículo espacial em relação a um sistema referencial inercial ou algum objeto de interesse, como a Terra. Este processo geralmente envolve a utilização de diversos tipos de sensores e sofisticados procedimentos de processamento de dados. A precisão alcançada é frequentemente limitada por uma combinação entre os métodos de processamento aplicados e o hardware da espaçonave. O processo de determinar a atitude pode ser resumido em se calcular a matriz de atitude do satélite num determinado instante em relação a um referencial previamente estabelecido \cite{Wertz2012}.
+A atitude de um satélite, ou seja, sua orientação no espaço, é crucial para o sucesso de missões espaciais. Como destacado por \cite{YANG2012198}, "A determinação e controle da atitude de um satélite é uma parte importante para que o satélite alcance sua missão projetada", sendo este controle um fator determinante no desempenho de satélites já lançados. Yang também ressalta que "A determinação da atitude é muito importante por duas razões: primeiro, os engenheiros de controle precisam verificar se a orientação está correta; segundo, se não estiver, o erro é comparado com a atitude desejada e utilizado para ajustar os atuadores, corrigindo a orientação do satélite".
 
-Os dados coletados pelos sensores, representados em forma de componentes vetoriais, podem ser apresentados de diferentes maneiras. Entre as opções estão os quatérnions, que oferecem uma forma compacta e eficiente de representar rotações; os ângulos de Euler, que descrevem a orientação através de três rotações sequenciais; ou ainda por meio de matrizes de rotação, que fornecem uma descrição completa e direta das transformações no espaço tridimensional. Cada uma dessas representações possui suas próprias vantagens, dependendo do contexto e das necessidades da aplicação.
+Com a crescente demanda por satélites dedicados a comunicação, monitoramento ambiental, sensoriamento remoto e pesquisa científica, o controle preciso da atitude tornou-se indispensável. O sucesso dessas missões depende da capacidade de manter a eficiência e a precisão operacionais, especialmente em um cenário de crescente complexidade tecnológica e competitividade no setor aeroespacial.
 
-Os quatérnions são definidos como "um 4-tuple, que é uma representação mais concisa do que uma matriz de rotação. Seu significado geométrico também é mais óbvio, pois o eixo de rotação e o ângulo podem ser recuperados de forma trivial"\cite{stanford2017quaternions}.
+Os dados coletados pelos sensores de atitude, normalmente representados como componentes vetoriais, podem ser apresentados em diversas formas, como quatérnions, ângulos de Euler ou matrizes de rotação. Os quatérnions, por exemplo, oferecem uma forma concisa e eficiente de descrever a rotação, permitindo uma interpretação geométrica clara do eixo e do ângulo de rotação \cite{jia2013quaternions}, enquanto os modelos de ângulos de Euler têm se mostrado muito eficientes porque os modelos linearizados baseados nesses ângulos são controláveis, e todos os métodos padrão de projeto de sistemas de controle lineares são diretamente aplicáveis\cite{YANG2012198}. As matrizes de rotação, por sua vez, é explicada como uma ferramenta usada para descrever a rotação de um objeto no espaço tridimensional em relação a um sistema de coordenadas inercial. Essa matriz é derivada a partir de ângulos de Euler e é usada para transformar coordenadas de um sistema de referência para outro. A matriz resultante é aplicada em diversas operações que envolvem a orientação espacial de satélites, como a determinação da atitude \cite{silva2016}
 
 
 %A determinação da atitude de um satélite é essencial não só para garantir o bom funcionamento do controle de atitude, mas também para assegurar a precisão e confiabilidade dos dados coletados pelo satélite
@@ -416,21 +417,23 @@ Portanto, o objetivo primário deste estudo foi desenvolver e implementar uma un
 %Um exemplo de tabela é apresentada na tabela~\ref{tab:001}. Você pode elaborar também tabelas online ou a partir de qualquer planilha eletrônica, inclusive em outros estilos, gerando o código em \LaTeX. Após isso, basta copiar e colar o código aqui. Um exemplo de site é o ``Tables Generator'': \url{http://www.tablesgenerator.com/}.
 o capítulo \ref{cap:revisao-de-literatura} são apresentados os principais trabalhos consultados para a realização do projeto conhecimento sobre o assunto.
 
-O presente trabalho aborda a estimativa da atitude de um satélite artificial, especificamente o Cubesat. Nos capítulos \ref{cap:desenvolvimento}, que começa na página \pageref{cap:desenvolvimento}, e 3, serão discutidos os conceitos fundamentais relacionados à atitude dos satélites, incluindo suas representações e os algoritmos utilizados para seu cálculo. Além disso, serão apresentados os componentes empregues na construção do nosso protótipo, como sensores, microcontroladores e outros dispositivos relevantes.
+O presente trabalho aborda a estimativa da atitude de um satélite artificial, especificamente o Cubesat. Nos capítulos \ref{cap:atitude}, que tem início na página \pageref{cap:atitude} e  \ref{cap:desenvolvimento}, que começa na página \pageref{cap:desenvolvimento}, serão discutidos os conceitos fundamentais relacionados à atitude dos satélites, incluindo suas representações e os algoritmos utilizados para seu cálculo. Além disso, serão apresentados os componentes empregues na construção do nosso protótipo, como sensores, microcontroladores e outros dispositivos relevantes.
 
 
 % Capitulo de revisão de literatura
-\chapter{Revisão de literatura} \label{cap:revisao-de-literatura}
+%\chapter{Revisão de literatura} \label{cap:revisao-de-literatura}
 
 A ESCREVER
 
-\chapter{Atitude de Satélites}
+\chapter{Atitude de Satélites}\label{cap:atitude}
 
 IDEIA DE ESCRITA
 
 \section{Ângulos de Euler}
 
-IDEIA DE ESCRITA
+
+
+
 
 \section{Quatérnions}
 
@@ -487,11 +490,19 @@ No mercado, o AltIMU-10 v3 se destaca não apenas por sua alta precisão, mas ta
 \section{Giroscópio}
 O giroscópio presente no AltIMU-10 v3 é o L3GD20H,como já citado anteriormente, um sensor de três eixos que mede a velocidade angular em torno dos eixos X, Y e Z. Ele é utilizado para detectar a rotação e a orientação de objetos em movimento, sendo amplamente utilizado em sistemas de controle de atitude. Esse giroscópio possui diferentes escalas de sensibilidade ajustáveis, que variam de ±245°/s a ±2000°/s, permitindo medições precisas de giros rápidos ou lentos. Além disso, o L3GD20H é conhecido por sua estabilidade e baixa deriva, características importantes para sistemas que exigem alta precisão em medições de rotação. 
 
+A capacidade de saída do giroscópio é em formato de 16 bits por eixo. O que possibilita uma resolução de dados elevada, deixando-o especialmente útil em sistemas de controle e navegação.
+
 Como sua comunicação é via protocolo I²C,como foi explicado anteriormente, facilita sua integração com microcontroladores, e opera com baixo consumo de energia, sendo ideal para aplicações embarcadas que precisam monitorar a atitude, como em satélites, drones e robôs.
 
 \section{Magnetômetro e Acelerômetro}
 % ---
+O acelerômetro e magnetômetro presentes no AltIMU-10 v3 estão combinados no sensor LSM303D, já citado, que mede tanto a aceleração quanto a intensidade dos campos magnéticos em três eixos (X, Y, Z). O acelerômetro é responsável por medir a aceleração linear do dispositivo, fornecendo informações importantes sobre inclinação e movimento, com escalas ajustáveis de sensibilidade que podem chegar a até ±16g. Isso o torna essencial para detectar variações na inclinação ou velocidade de objetos, sendo muito utilizado em sistemas de estabilização e controle de atitude.
 
+Já o magnetômetro mede a intensidade dos campos magnéticos, permitindo que o dispositivo determine sua orientação em relação ao campo magnético da Terra. Com uma faixa de medição de até ±12 gauss, o magnetômetro é usado para calcular a direção do norte magnético, funcionando como uma bússola digital. E ambos os CIs possuem sua saída de 16 bits por eixo, tendo assim, as mesmas vantagens do Giroscópio.
+
+Juntos, o acelerômetro e o magnetômetro permitem determinar tanto a inclinação quanto a orientação espacial do dispositivo, complementando as medições do giroscópio para fornecer uma visão completa da atitude e movimento.
+
+Assim como o giroscópio, o LSM303D utiliza o protocolo de comunicação I²C, o que facilita sua integração com sistemas embarcados e microcontroladores, permitindo a leitura simultânea dos dados de aceleração e campo magnético em tempo real, com baixo consumo de energia.
 
 
 
@@ -522,7 +533,7 @@ As últimas palavras podem ser apresentadas neste capítulo. Ele pode ser numera
 %% ----------------------------------------------------------
 %% Referências bibliográficas
 %% ----------------------------------------------------------
-% toca nome de bibliografia para ``Referências''
+% troca nome de bibliografia para ``Referências''
 \printbibliography[title=Referências]
 
 
@@ -542,7 +553,7 @@ As últimas palavras podem ser apresentadas neste capítulo. Ele pode ser numera
 % ---
 % Inicia os apêndices:
 % ---
-\begin{apendicesenv}
+%\begin{apendicesenv}
 
 % Imprime uma página indicando o início dos apêndices
 %\partapendices
@@ -550,11 +561,11 @@ As últimas palavras podem ser apresentadas neste capítulo. Ele pode ser numera
 % Insere arquivo com o apêndice A
 % --------
 
-\chapter{libero justo}
+%\chapter{libero justo}
 Lembre-se: apêndices são de autoria do próprio autor do texto. Anexos são elementos de autorias de outros, que o autor do texto julga interessante apresentar
 
 
-\end{apendicesenv}
+%\end{apendicesenv}
 % ---
 
 % ----------------------------------------------------------
@@ -565,21 +576,21 @@ Lembre-se: apêndices são de autoria do próprio autor do texto. Anexos são el
 % ---
 % Inicia os anexos
 % ---
-\begin{anexosenv}
+%\begin{anexosenv}
 
 % Imprime uma página indicando o início dos anexos
 %\partanexos
 
 % ---
 % Insere arquivo com os anexos 1, 2
-\chapter{Morbi ultrices rutrum lorem.}
+%\chapter{Morbi ultrices rutrum lorem.}
 Lembre-se: apêndices são de autoria do próprio autor do texto. Anexos são elementos de autorias de outros, que o autor do texto julga interessante apresentar
 
-\chapter{Lorem Morbi ultrices rutrum.}
+%\chapter{Lorem Morbi ultrices rutrum.}
 Lembre-se: apêndices são de autoria do próprio autor do texto. Anexos são elementos de autorias de outros, que o autor do texto julga interessante apresentar
 
 % ---
-\end{anexosenv}
+%\end{anexosenv}
 
 %---------------------------------------------------------------------
 % INDICE REMISSIVO
