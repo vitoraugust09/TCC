@@ -344,12 +344,13 @@
 
 
 
-Os satélites artificiais desempenham um papel fundamental em interações com a Terra, corpos celestes ou outros artefatos espaciais, realizando tarefas essenciais por meio de instrumentos e dispositivos que precisam ser posicionados e orientados corretamente para garantir o desempenho ideal \cite{shuster1993} \textit{apud} \cite{ferreira2008}. Um exemplo notável desse tipo de tecnologia é o Sputnik 1, o primeiro satélite lançado ao espaço, que marcou o início da Era Espacial após o fim da Segunda Guerra Mundial (ver Figura \ref{fig:sputnik}). 
+Os satélites artificiais desempenham um papel fundamental em interações com a Terra, corpos celestes ou outros artefatos espaciais, realizando tarefas essenciais por meio de instrumentos e dispositivos que precisam ser posicionados e orientados corretamente para garantir o desempenho ideal \cite{shuster1993} \textit{apud} \cite{ferreira2008}. Um exemplo notável desse tipo de tecnologia é o Sputnik 1. No dia 4 de outubro de 1957, o a aeronave foi lançada com sucesso, tornando-se o primeiro objeto feito pelo homem a entrar na órbita da Terra e marcando o início da 'Era Espacial' (ver Figura \ref{fig:sputnik}). 
 
 \begin{figure}[h]
 	\centering
 	\includegraphics[scale=0.6]{Sputnik.jpg} % ajuste o valor do scale conforme necessário
 	\caption[Sputnik 1 antes do lançamento em outubro de 1957]{Sputnik 1 antes do lançamento em outubro de 1957}
+	\fonte[Fonte: European Space Agency (ESA). Disponível em:]{\url{https://www.esa.int/ESA_Multimedia/Images/2007/10/Sputnik_1_before_launch_in_October_1957}}
 	\label{fig:sputnik}
 \end{figure}
 
@@ -384,12 +385,14 @@ Os algoritmos de medição, estimação e controle foram implementados em uma pl
 	\includegraphics[width=0.5\linewidth]{figuras/foto1}
 	\caption{Cubo 3D gerado com o código python para o teste dos sensores}
 	\label{fig:Imagemcubo1}
+	\fonte{Autor}
 \end{figure}
 
 \begin{figure}[h]
 	\centering
 	\includegraphics[width=0.5\linewidth]{figuras/foto2}
 	\caption{Cubo 3D gerado com o código python para o teste dos sensores}
+	\fonte{Autor}
 	\label{fig:Imagemcubo2}
 \end{figure}
 
@@ -423,7 +426,7 @@ O presente trabalho aborda a estimativa da atitude de um satélite artificial, e
 % Capitulo de revisão de literatura
 %\chapter{Revisão de literatura} \label{cap:revisao-de-literatura}
 
-A ESCREVER
+%A ESCREVER
 
 \chapter{Atitude de Satélites}\label{cap:atitude}
 
@@ -476,13 +479,14 @@ O AltIMU-10 v3 utiliza a interface de comunicação I²C, um protocolo serial si
 
 Uma vantagem adicional em relação a outros produtos similares é que esse módulo inclui componentes eletrônicos adicionais, como um regulador de tensão integrado e circuitos de mudança de nível, o que torna sua interface compatível tanto com sistemas de 3,3V quanto com sistemas que operam a 5V. Isso elimina a necessidade de componentes externos para ajustar a tensão, facilitando a sua integração em projetos que utilizam microcontroladores que operam a diferentes tensões de alimentação.
 
-No mercado, o AltIMU-10 v3 se destaca não apenas por sua alta precisão, mas também por sua facilidade de uso em relação a outros sensores MEMS, que, por serem pequenos e funcionarem com tensões mais baixas, costumam apresentar dificuldades de integração para estudantes e amadores. A Pololu superou essas barreiras, oferecendo uma solução compacta e acessível com a robustez necessária para projetos que demandam medições precisas de atitude e altitude. \cite{Polulu2024}
+No mercado, o AltIMU-10 v3 se destaca não apenas por sua alta precisão, mas também por sua facilidade de uso em relação a outros sensores MEMS (Micro-Electro-Mechanical Systems) , que, por serem pequenos e funcionarem com tensões mais baixas, costumam apresentar dificuldades de integração para estudantes e amadores. A Pololu superou essas barreiras, oferecendo uma solução compacta e acessível com a robustez necessária para projetos que demandam medições precisas de atitude e altitude. \cite{Polulu2024}
 
 \begin{figure}[h]
 	\centering
 	\includegraphics[width=0.5\linewidth]{figuras/altimu}
 	\caption[AltIMU10 - v3]{Imagem do AltIMU10 - v3 da Polulu}
-	\fonte[Polulu, 2024]{\url{https://www.pololu.com/product/2469}}
+	%\fonte[Polulu, 2024]{\url{https://www.pololu.com/product/2469}}
+	\fonte{Disponível em \cite{Polulu2024}}
 	\label{fig:altimu}
 \end{figure}
 
@@ -504,23 +508,47 @@ Juntos, o acelerômetro e o magnetômetro permitem determinar tanto a inclinaç�
 
 Assim como o giroscópio, o LSM303D utiliza o protocolo de comunicação I²C, o que facilita sua integração com sistemas embarcados e microcontroladores, permitindo a leitura simultânea dos dados de aceleração e campo magnético em tempo real, com baixo consumo de energia.
 
+\chapter{Sistema de Estimação de Atitude}
+
+Após a aquisição de dados dos sensores de atitude, entra-se na fase de estimação da atitude em si, onde um microcontrolador desempenha um papel central. Este atua como o "cérebro" do sistema, implementando o algoritmo de estimação selecionado, que processa os dados dos sensores para determinar a orientação do satélite artificial em relação a um referencial. A escolha do algoritmo é fundamental, pois a precisão da estimação depende diretamente da capacidade do microcontrolador de processar as leituras dos sensores de maneira eficiente e em tempo real.
+
+\section{Controlador}
+
+
+Escolhido como principal componente do sistema de estimação a placa de desenvolvimento ESP32, fabricada pela DOIT. Entre as várias opções disponíveis, optamos pelo modelo DOIT ESP32 DevKit v1, ilustrado na Figura \ref{fig:esp}. Esse modelo conta com um microcontrolador dual-core de 32 bits, o ESP-WROOM-32, fabricado pela Espressif. A decisão pela escolha desta placa foi baseada em sua ampla popularidade, fácil acesso a bibliotecas de código aberto e compatibilidade com diversas plataformas de desenvolvimento, o que facilita a implementação e integração com sensores e algoritmos de controle de atitude. Além disso, o ESP32 é conhecido por seu excelente custo-benefício, aliando poder de processamento e conectividade Wi-Fi/Bluetooth, sendo uma solução robusta e acessível para projetos de sistemas embarcados.
+
+\begin{figure}[h]
+	\centering
+	\includegraphics[width=0.5\linewidth]{figuras/esp}
+	\caption[ESP32]{Placa ESP 32}
+	\fonte[Fonte:]{\url{https://olddocs.zerynth.com/r2.3.3/official/board.zerynth.doit_esp32/docs/index.html}}
+	\label{fig:esp}
+\end{figure}
+
+Neste projeto, sua tarefa é analisar os dados obtidos a partir dos sensores ( giroscópio, acelerômetro e magnetômetro). Além disso, será também, responsável por formar os vetores de observação, normaliza-los, e implementar o algoritmo para estabelecer a orientação do nosso satélite.
+
+Para a implementação do código do nosso determinador de atitude, optamos pela utilização da plataforma Arduino IDE, um software de código aberto amplamente utilizado em projetos de prototipagem eletrônica. O Arduino IDE oferece suporte à linguagem C, que é a principal linguagem de programação empregada para microcontroladores, facilitando a integração com sensores e dispositivos embarcados além de possuir uma vasta biblioteca de recursos de fácil acesso. 
+
+Paralelamente, para realizar simulações mais detalhadas do comportamento do satélite, utilizamos o Visual Studio Code (VSCode), uma poderosa plataforma de desenvolvimento que, combinada com a linguagem Python, nos permitiu criar uma simulação tridimensional. Python foi escolhido por sua flexibilidade e pela facilidade em manipular gráficos 3D, o que foi essencial para representar visualmente a atitude do satélite como um cubo 3D em movimento. Essa visualização gráfica, como mostrado nas figuras \ref{fig:Imagemcubo1} e \ref{fig:Imagemcubo2}, na página \pageref{fig:Imagemcubo1}, nos ajudou a compreender como as alterações nos vetores de atitude influenciam a orientação do satélite em relação ao espaço.
+
+Dessa forma, o uso dessas duas plataformas complementares permitiu não apenas o desenvolvimento de um sistema eficiente para a determinação de atitude, mas também a realização de testes e simulações com alta precisão. Enquanto o Arduino IDE se mostrou eficiente para o controle de hardware, o VSCode e o Python foram indispensáveis para o desenvolvimento da interface de simulação, o que tornou o processo de validação do sistema mais intuitivo e visualmente compreensível.
 
 
 % primeiro capitulo de Resultados
-\chapter{Resultados} \label{cap:resultados}
+%\chapter{Resultados} \label{cap:resultados}
 % ---
 
-Neste capítulo é apresentada uma análise dos resultados obtidos.
+%Neste capítulo é apresentada uma análise dos resultados obtidos.
 
-\section{Dados, dados, dados}
+%\section{Dados, dados, dados}
 % ---
 
 
 % ----------------------------------------------------------
 %\phantompart
 % Insere arquivo de Considerações Finais ou Conclusões
-\chapter{Considerações finais}
-As últimas palavras podem ser apresentadas neste capítulo. Ele pode ser numerado ou não. Caso queria que ele não possua numeração, utilize \* apos o comando chapter.
+%\chapter{Considerações finais}
+%As últimas palavras podem ser apresentadas neste capítulo. Ele pode ser numerado ou não. Caso queria que ele não possua numeração, utilize \* apos o comando chapter.
 
 
 
@@ -562,7 +590,7 @@ As últimas palavras podem ser apresentadas neste capítulo. Ele pode ser numera
 % --------
 
 %\chapter{libero justo}
-Lembre-se: apêndices são de autoria do próprio autor do texto. Anexos são elementos de autorias de outros, que o autor do texto julga interessante apresentar
+%Lembre-se: apêndices são de autoria do próprio autor do texto. Anexos são elementos de autorias de outros, que o autor do texto julga interessante apresentar
 
 
 %\end{apendicesenv}
@@ -584,10 +612,10 @@ Lembre-se: apêndices são de autoria do próprio autor do texto. Anexos são el
 % ---
 % Insere arquivo com os anexos 1, 2
 %\chapter{Morbi ultrices rutrum lorem.}
-Lembre-se: apêndices são de autoria do próprio autor do texto. Anexos são elementos de autorias de outros, que o autor do texto julga interessante apresentar
+%Lembre-se: apêndices são de autoria do próprio autor do texto. Anexos são elementos de autorias de outros, que o autor do texto julga interessante apresentar
 
 %\chapter{Lorem Morbi ultrices rutrum.}
-Lembre-se: apêndices são de autoria do próprio autor do texto. Anexos são elementos de autorias de outros, que o autor do texto julga interessante apresentar
+%Lembre-se: apêndices são de autoria do próprio autor do texto. Anexos são elementos de autorias de outros, que o autor do texto julga interessante apresentar
 
 % ---
 %\end{anexosenv}
