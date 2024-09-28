@@ -491,14 +491,14 @@ No mercado, o AltIMU-10 v3 se destaca não apenas por sua alta precisão, mas ta
 \end{figure}
 
 
-\section{Giroscópio}
+\subsection{Giroscópio}
 O giroscópio presente no AltIMU-10 v3 é o L3GD20H,como já citado anteriormente, um sensor de três eixos que mede a velocidade angular em torno dos eixos X, Y e Z. Ele é utilizado para detectar a rotação e a orientação de objetos em movimento, sendo amplamente utilizado em sistemas de controle de atitude. Esse giroscópio possui diferentes escalas de sensibilidade ajustáveis, que variam de ±245°/s a ±2000°/s, permitindo medições precisas de giros rápidos ou lentos. Além disso, o L3GD20H é conhecido por sua estabilidade e baixa deriva, características importantes para sistemas que exigem alta precisão em medições de rotação. 
 
 A capacidade de saída do giroscópio é em formato de 16 bits por eixo. O que possibilita uma resolução de dados elevada, deixando-o especialmente útil em sistemas de controle e navegação.
 
 Como sua comunicação é via protocolo I²C,como foi explicado anteriormente, facilita sua integração com microcontroladores, e opera com baixo consumo de energia, sendo ideal para aplicações embarcadas que precisam monitorar a atitude, como em satélites, drones e robôs.
 
-\section{Magnetômetro e Acelerômetro}
+\subsection{Magnetômetro e Acelerômetro}
 % ---
 O acelerômetro e magnetômetro presentes no AltIMU-10 v3 estão combinados no sensor LSM303D, já citado, que mede tanto a aceleração quanto a intensidade dos campos magnéticos em três eixos (X, Y, Z). O acelerômetro é responsável por medir a aceleração linear do dispositivo, fornecendo informações importantes sobre inclinação e movimento, com escalas ajustáveis de sensibilidade que podem chegar a até ±16g. Isso o torna essencial para detectar variações na inclinação ou velocidade de objetos, sendo muito utilizado em sistemas de estabilização e controle de atitude.
 
@@ -508,11 +508,11 @@ Juntos, o acelerômetro e o magnetômetro permitem determinar tanto a inclinaç�
 
 Assim como o giroscópio, o LSM303D utiliza o protocolo de comunicação I²C, o que facilita sua integração com sistemas embarcados e microcontroladores, permitindo a leitura simultânea dos dados de aceleração e campo magnético em tempo real, com baixo consumo de energia.
 
-\chapter{Sistema de Estimação de Atitude}
+\section{Sistema de Estimação de Atitude}
 
 Após a aquisição de dados dos sensores de atitude, entra-se na fase de estimação da atitude em si, onde um microcontrolador desempenha um papel central. Este atua como o "cérebro" do sistema, implementando o algoritmo de estimação selecionado, que processa os dados dos sensores para determinar a orientação do satélite artificial em relação a um referencial. A escolha do algoritmo é fundamental, pois a precisão da estimação depende diretamente da capacidade do microcontrolador de processar as leituras dos sensores de maneira eficiente e em tempo real.
 
-\section{Controlador}
+\subsection{Controlador}
 
 
 Escolhido como principal componente do sistema de estimação a placa de desenvolvimento ESP32, fabricada pela DOIT. Entre as várias opções disponíveis, optamos pelo modelo DOIT ESP32 DevKit v1, ilustrado na Figura \ref{fig:esp}. Esse modelo conta com um microcontrolador dual-core de 32 bits, o ESP-WROOM-32, fabricado pela Espressif. A decisão pela escolha desta placa foi baseada em sua ampla popularidade, fácil acesso a bibliotecas de código aberto e compatibilidade com diversas plataformas de desenvolvimento, o que facilita a implementação e integração com sensores e algoritmos de controle de atitude. Além disso, o ESP32 é conhecido por seu excelente custo-benefício, aliando poder de processamento e conectividade Wi-Fi/Bluetooth, sendo uma solução robusta e acessível para projetos de sistemas embarcados.
