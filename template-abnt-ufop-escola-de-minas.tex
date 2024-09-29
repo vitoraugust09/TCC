@@ -263,24 +263,23 @@
 % resumo em português
 \setlength{\absparsep}{18pt} % ajusta o espaçamento dos parágrafos do resumo
 \begin{resumo}
- \noindent O resumo deve ressaltar o objetivo, o método, os resultados e as conclusões do documento. A ordem e a extensão
- destes itens dependem do tipo de resumo (informativo ou indicativo) e do tratamento que cada item recebe no documento original. O resumo deve ser precedido da referência do documento, com exceção do resumo inserido no
- próprio documento. (\ldots) As palavras-chave devem figurar logo abaixo do resumo, antecedidas da expressão Palavras-chave:, separadas entre si por
- ponto e finalizadas também por ponto.
+ %\noindent O resumo deve ressaltar o objetivo, o método, os resultados e as conclusões do documento. A ordem e a extensão destes itens dependem do tipo de resumo (informativo ou indicativo) e do tratamento que cada item recebe no documento original. O resumo deve ser precedido da referência do documento, com exceção do resumo inserido no próprio documento. (\ldots) As palavras-chave devem figurar logo abaixo do resumo, antecedidas da expressão Palavras-chave:, separadas entre si por ponto e finalizadas também por ponto.
+Os satélites artificiais desempenham um papel essencial em diversos setores, como comunicação, monitoramento ambiental, sensoriamento remoto e pesquisa científica. Para que esses satélites cumpram suas funções corretamente, é necessário que mantenham uma orientação adequada em relação à Terra ou a outros objetos de interesse. Isso é feito por meio de sistemas de controle de atitude. Este trabalho tem como objetivo o desenvolvimento de um sistema de estimação e controle de atitude de satélites artificiais, especificamente para CubeSats, utilizando sensores inerciais e um microcontrolador ESP32. A metodologia adotada incluiu a revisão bibliográfica sobre conceitos fundamentais como ângulos de Euler, quatérnions e matrizes de rotação, além da implementação de algoritmos de determinação de atitude.
 
- \textbf{Palavras-chaves}: latex. abntex. editoração de texto.
+
+ \textbf{Palavras-chaves}: controle de atitude. CubeSat. ESP32. sensores inerciais.
 \end{resumo}
 
 % resumo em inglês
 \begin{resumo}[Abstract]
  \begin{otherlanguage*}{english}
 
-\noindent This is the english abstract.
+\noindent Artificial satellites play a crucial role in various sectors such as communication, environmental monitoring, remote sensing, and scientific research. For these satellites to perform their functions correctly, they must maintain an appropriate orientation relative to Earth or other objects of interest. This is achieved through attitude control systems. This work aims to develop an attitude estimation and control system for artificial satellites, specifically CubeSats, using inertial sensors and an ESP32 microcontroller. The adopted methodology included a bibliographic review of fundamental concepts such as Euler angles, quaternions, and rotation matrices, in addition to the implementation of attitude determination algorithms.
 
    \vspace{\onelineskip}
 
    \noindent
-   \textbf{Key-words}: latex. abntex. text editoration.
+   \textbf{Key-words}: attitude control. CubeSat. ESP32. inertial sensors
  \end{otherlanguage*}
 \end{resumo}
 
@@ -416,7 +415,7 @@ Portanto, o objetivo primário deste estudo foi desenvolver e implementar uma un
 
 %Um exemplo de tabela é apresentada na tabela~\ref{tab:001}. Você pode elaborar também tabelas online ou a partir de qualquer planilha eletrônica, inclusive em outros estilos, gerando o código em \LaTeX. Após isso, basta copiar e colar o código aqui. Um exemplo de site é o ``Tables Generator'': \url{http://www.tablesgenerator.com/}.
 
-o capítulo \ref{cap:revisao-de-literatura} são apresentados os principais trabalhos consultados para a realização do projeto conhecimento sobre o assunto.
+No capítulo \ref{cap:revisao-de-literatura}, são apresentados os principais trabalhos consultados para a realização do projeto, com o objetivo de fornecer uma base sólida de conhecimento sobre o tema em questão.
 
 O presente trabalho aborda a estimativa da atitude de um satélite artificial, especificamente o Cubesat. Nos capítulos \ref{cap:atitude}, que tem início na página \pageref{cap:atitude} e  \ref{cap:desenvolvimento}, que começa na página \pageref{cap:desenvolvimento}, serão discutidos os conceitos fundamentais relacionados à atitude dos satélites, incluindo suas representações e os algoritmos utilizados para seu cálculo. Além disso, serão apresentados os componentes empregues na construção do nosso protótipo, como sensores, microcontroladores e outros dispositivos relevantes.
 
@@ -432,25 +431,43 @@ Alguns trabalhos importantes sobre controle e atitude de satélites já foram de
 Além disso, o autor detalha como cada uma das ferramentas de atitude é empregada para determinar a orientação do satélite no espaço, explorando os cálculos matemáticos envolvidos, que incluem as transformações de coordenadas e a construção de matrizes de rotação. Embora o trabalho de Tavares tenha apresentado pequenos erros de precisão na fase de testes
 
 \begin{citacao}
-	"(...)Em relação aos resultados percebeu-se uma defasagem quando os
+	(...)Em relação aos resultados percebeu-se uma defasagem quando os
 	ângulos se afastam de zero, em comparação aos resultados dos potenciômetros. Embora
-	os erros observados se mantenham em uma faixa razoável, eles devem ser analisados.(...)"
+	os erros observados se mantenham em uma faixa razoável, eles devem ser analisados.(...)
 \end{citacao}
 
  o projeto foi bem-sucedido ao atingir os objetivos propostos, demonstrando a eficácia da abordagem e confirmando a viabilidade de aplicação dos algoritmos desenvolvidos.
  
 \begin{citacao}
-	"(...)O desenvolvimento da plataforma vê-se que a atingiu o objetivo esperado. Foi
+	(...)O desenvolvimento da plataforma vê-se que a atingiu o objetivo esperado. Foi
 	criado um dispositivo que simula de forma intuitiva a orientação de um corpo no espaço.
-	Isso graças a montagem usando de kimbal’s.(...)"
+	Isso graças a montagem usando de kimbal’s.(...)
 \end{citacao}
 
 
-Um outro estudo em relação à isso, temos \cite{faustino2019}, que por sua vez, explora o controle de atitude sob uma perspectiva diferente, mas com objetivos relacionados à estabilidade de satélites. Mais especificamente ( Estudo e validação do sistema de controle de atitude em um eixo de um CubeSat 1U atuado por roda de reação para realização de apontamento e frenagem). Diferentemente do outro trabalho, este, usa-se o \textit{software} MATLAB 
+Um outro estudo em relação à isso, temos \cite{faustino2019}, nele fala-se do estudo e validação do sistema de controle de atitude em um CubeSat de 1U, atuado por uma roda de reação, que aborda a importância do controle de atitude para a operação eficaz de satélites artificiais, como o tema central. O trabalho destaca que a capacidade de apontamento e frenagem é crucial para o desempenho do CubeSat, permitindo que ele direcione seus instrumentos para alvos específicos e execute manobras de estabilização.
+A validação desse sistema é realizada por meio de simulações e testes práticos, que demonstram que o CubeSat consegue manter e modificar sua atitude conforme os comandos recebidos. Os resultados obtidos na monografia confirmam que os objetivos propostos foram alcançados, evidenciando a eficácia do sistema de controle e ressalta ainda, a importância da validação.
+
+\begin{citacao}
+	(...)Neste trabalho os testes foram concluídos de forma satisfatória. A importância da validação de um sistema após projetado ficou claro aqui, pois sem a simulação o controlador teria sido rejeitado e tido como inapropriado para o caso.A análise experimental mostrou exatamente o comportamento do sistema, o que possibilitou o ajuste do controlador que nos deu uma resposta melhor que a esperada, prevista em análise numérica.(...)
+\end{citacao}
+
+Além disso, a monografia sugere que, apesar do sucesso na validação, existem oportunidades para melhorias e inovações futuras. O trabalho aponta para a necessidade de explorar novos algoritmos de controle e técnicas de otimização que possam aumentar a eficiência do sistema.
+
+\begin{citacao}
+	(...)Encontrar o real problemas do modelo que represente o torque necessário requerido pela roda é importante para que os estudos no possam avançar.(...)
+\end{citacao}
 
 
+ Sugestões para investigações futuras incluem a integração de sensores adicionais para um feedback mais preciso e o desenvolvimento de sistemas de controle mais robustos, capazes de operar em condições adversas.
 
- O artigo de \cite{ferreira2008} complementa a discussão com um procedimento experimental detalhado sobre a determinação de atitude.
+\begin{citacao}
+	(...)O estudo para outros controladores também deve ser feito, para o comportamento
+	deles no simulador do LODESTAR contribuindo assim para o seu aperfeiçoamento.(...)
+\end{citacao}
+
+
+ %O artigo de \cite{ferreira2008} complementa a discussão com um procedimento experimental detalhado sobre a determinação de atitude.
 
 %Alguns trabalho na área já foram escritos e tratam de temas muito semelhantes ao tema abordado neste trabalho. Na monografia \cite{tavares2017}, o autor aborda o tema de forma muito semelhante ao que será abordado neste trabalho em questão, falando sobre a atitude de satélites, construção de um protótipo de teste. Já em \cite{faustino2019} a autora aborda de um forma um pouco diferente sobre a atitude de satélites mas segue um ideal similar. Outro trabalho que segue a mesma linha de pesquisa e que traz alguns dados e informações importante é o artigo \cite{ferreira2008}.
 
