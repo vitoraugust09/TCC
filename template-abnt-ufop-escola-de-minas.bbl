@@ -19,7 +19,78 @@
 
 \refsection{0}
   \datalist[entry]{nty/global//global/global/global}
-    \entry{ferreira2008}{article}{}{1}
+    \entry{art_ferreira2008}{article}{}{}
+      \name{author}{1}{}{%
+        {{un=0,uniquepart=base,hash=3de9d1f88d0ca3a2b845516e4d484820}{%
+           family={al.},
+           familyi={a\bibinitperiod},
+           given={A.\bibnamedelimi J.\bibnamedelimi Ferreira},
+           giveni={A\bibinitperiod\bibinitdelim J\bibinitperiod\bibinitdelim F\bibinitperiod},
+           givenun=0,
+           prefix={et},
+           prefixi={e\bibinitperiod},
+           prefixun=0}}%
+      }
+      \strng{namehash}{3de9d1f88d0ca3a2b845516e4d484820}
+      \strng{fullhash}{3de9d1f88d0ca3a2b845516e4d484820}
+      \strng{fullhashraw}{3de9d1f88d0ca3a2b845516e4d484820}
+      \strng{bibnamehash}{3de9d1f88d0ca3a2b845516e4d484820}
+      \strng{authorbibnamehash}{3de9d1f88d0ca3a2b845516e4d484820}
+      \strng{authornamehash}{3de9d1f88d0ca3a2b845516e4d484820}
+      \strng{authorfullhash}{3de9d1f88d0ca3a2b845516e4d484820}
+      \strng{authorfullhashraw}{3de9d1f88d0ca3a2b845516e4d484820}
+      \field{sortinit}{a}
+      \field{sortinithash}{2f401846e2029bad6b3ecc16d50031e2}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{journaltitle}{Ciência & Engenharia}
+      \field{note}{Acesso em: 09 abr. 2015}
+      \field{title}{Procedimento experimental para a determinação de atitude de satélites artificiais}
+      \field{volume}{17}
+      \field{year}{2008}
+      \field{pages}{57\bibrangedash 64}
+      \range{pages}{8}
+      \verb{urlraw}
+      \verb http://www.seer.ufu.br/index.php/cieng/article/view/1107
+      \endverb
+      \verb{url}
+      \verb http://www.seer.ufu.br/index.php/cieng/article/view/1107
+      \endverb
+    \endentry
+    \entry{faustino2019}{thesis}{}{}
+      \name{author}{1}{}{%
+        {{un=0,uniquepart=base,hash=04b2aa440ae27aae206b70b78a088bc6}{%
+           family={Faustino},
+           familyi={F\bibinitperiod},
+           given={M.\bibnamedelimi C.\bibnamedelimi M.},
+           giveni={M\bibinitperiod\bibinitdelim C\bibinitperiod\bibinitdelim M\bibinitperiod},
+           givenun=0}}%
+      }
+      \list{institution}{1}{%
+        {Nome da Instituição}%
+      }
+      \strng{namehash}{04b2aa440ae27aae206b70b78a088bc6}
+      \strng{fullhash}{04b2aa440ae27aae206b70b78a088bc6}
+      \strng{fullhashraw}{04b2aa440ae27aae206b70b78a088bc6}
+      \strng{bibnamehash}{04b2aa440ae27aae206b70b78a088bc6}
+      \strng{authorbibnamehash}{04b2aa440ae27aae206b70b78a088bc6}
+      \strng{authornamehash}{04b2aa440ae27aae206b70b78a088bc6}
+      \strng{authorfullhash}{04b2aa440ae27aae206b70b78a088bc6}
+      \strng{authorfullhashraw}{04b2aa440ae27aae206b70b78a088bc6}
+      \field{sortinit}{F}
+      \field{sortinithash}{2638baaa20439f1b5a8f80c6c08a13b4}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{bookpagination}{sheet}
+      \field{title}{Estudo de sistema de controle de atitude para simulador de nanossatélite}
+      \field{type}{Tese}
+      \field{year}{2019}
+    \endentry
+    \entry{ferreira2008}{article}{}{2}
       \name{author}{6}{}{%
         {{un=0,uniquepart=base,hash=6022830f5d62999bd0630e86ccc84c02}{%
            family={Ferreira},
@@ -83,7 +154,7 @@
       \field{pages}{57\bibrangedash 64}
       \range{pages}{8}
     \endentry
-    \entry{jia2013quaternions}{misc}{}{1}
+    \entry{jia2013quaternions}{misc}{}{2}
       \name{author}{1}{}{%
         {{un=0,uniquepart=base,hash=67510a14b40f44112ef5a37d6b07fe09}{%
            family={Jia},
@@ -127,7 +198,7 @@
       \verb https://www.pololu.com/product/2469
       \endverb
     \endentry
-    \entry{shuster1993}{article}{}{1}
+    \entry{shuster1993}{article}{}{2}
       \name{author}{1}{}{%
         {{un=0,uniquepart=base,hash=b7b02c15ce293ad04847a75e09962eb2}{%
            family={Shuster},
@@ -158,7 +229,7 @@
       \field{pages}{439\bibrangedash 517}
       \range{pages}{79}
     \endentry
-    \entry{silva2016}{thesis}{}{}
+    \entry{silva2016}{thesis}{}{2}
       \name{author}{1}{}{%
         {{un=0,uniquepart=base,hash=3dddd0b1a6d33b46865acab3f0e61834}{%
            family={Silva},
@@ -185,7 +256,7 @@
       \field{title}{Filtro H-infinito estendido de segunda ordem e filtro de partículas regularizado com "roughening" aplicados na estimativa de atitude de satélites artificiais}
       \field{year}{2016}
     \endentry
-    \entry{tavares2017}{thesis}{}{1}
+    \entry{tavares2017}{thesis}{}{2}
       \name{author}{1}{}{%
         {{un=0,uniquepart=base,hash=7870717270bce8cdbe25fa42fabefd9a}{%
            family={Tavares},
@@ -222,7 +293,7 @@
       \field{pages}{66}
       \range{pages}{1}
     \endentry
-    \entry{Wertz2012}{book}{}{1}
+    \entry{Wertz2012}{book}{}{2}
       \name{author}{1}{}{%
         {{un=0,uniquepart=base,hash=44c6d1a811e1293f490371afda50288e}{%
            family={Wertz},
@@ -252,7 +323,7 @@
       \field{volume}{73}
       \field{year}{2012}
     \endentry
-    \entry{YANG2012198}{article}{}{2}
+    \entry{YANG2012198}{article}{}{3}
       \name{author}{1}{}{%
         {{un=0,uniquepart=base,hash=865de0ad624b442a018417bf6b85083e}{%
            family={Yang},

@@ -230,18 +230,18 @@
 
 % Folha de rosto [OBRIGATÓRIO]
 \imprimirfolhaderosto
-% \imprimirfolhaderosto* se quiser ficha catalográfica
+ %\imprimirfolhaderosto* se quiser ficha catalográfica
 
 % Ficha bibliográfica [OPCIONAL,segundo determinação CECAU  e DECAT, 29/03/2023]
 % \begin{fichacatalografica}
-%     \includepdf{fig_ficha_catalografica.pdf}
+  %   \includepdf{fig_ficha_catalografica.pdf}
 % \end{fichacatalografica}
 
 
 % Folha de aprovação - Obrigatório NBR 14724/2011
-\begin{folhadeaprovacao}
-\includepdf{folha-de-aprovacao.pdf}
-\end{folhadeaprovacao}
+%\begin{folhadeaprovacao}
+%\includepdf{folha-de-aprovacao.pdf}
+%\end{folhadeaprovacao}
 
 
 % Agradecimentos - opcional
@@ -310,12 +310,9 @@
 %---
 % Lista de símbolos [OPCIONAL]
 %---
-\begin{simbolos}
-  \item[$ \Gamma $] Letra grega Gama
-  \item[$ \Lambda $] Lambda
-  \item[$ \zeta $] Letra grega minúscula zeta
-  \item[$ \in $] Pertence
-\end{simbolos}
+%\begin{simbolos}
+  
+%\end{simbolos}
 % ---
 
 % ---
@@ -418,14 +415,47 @@ Portanto, o objetivo primário deste estudo foi desenvolver e implementar uma un
 %A estrutura e organização deve apresentar os assuntos abordados ao longo do seu texto. Por exemplo, no capítulo \ref{cap:revisao-de-literatura} são apresentados e discutidos os principais trabalhos neste campo de pesquisa. Já no capítulo \ref{cap:desenvolvimento}, que, por acaso, começa na página \pageref{cap:desenvolvimento}, o trabalho é desenvolvido.
 
 %Um exemplo de tabela é apresentada na tabela~\ref{tab:001}. Você pode elaborar também tabelas online ou a partir de qualquer planilha eletrônica, inclusive em outros estilos, gerando o código em \LaTeX. Após isso, basta copiar e colar o código aqui. Um exemplo de site é o ``Tables Generator'': \url{http://www.tablesgenerator.com/}.
+
 o capítulo \ref{cap:revisao-de-literatura} são apresentados os principais trabalhos consultados para a realização do projeto conhecimento sobre o assunto.
 
 O presente trabalho aborda a estimativa da atitude de um satélite artificial, especificamente o Cubesat. Nos capítulos \ref{cap:atitude}, que tem início na página \pageref{cap:atitude} e  \ref{cap:desenvolvimento}, que começa na página \pageref{cap:desenvolvimento}, serão discutidos os conceitos fundamentais relacionados à atitude dos satélites, incluindo suas representações e os algoritmos utilizados para seu cálculo. Além disso, serão apresentados os componentes empregues na construção do nosso protótipo, como sensores, microcontroladores e outros dispositivos relevantes.
 
 
 % Capitulo de revisão de literatura
-%\chapter{Revisão de literatura} \label{cap:revisao-de-literatura}
+\chapter{Revisão de literatura} \label{cap:revisao-de-literatura}
 
+Neste capítulo de revisão bibliográfica, será abordada a literatura existente sobre controle e atitude de satélites artificiais, destacando os principais trabalhos relacionados ao tema. Inicialmente, serão discutidos estudos que exploram a construção de protótipos e a implementação de sistemas de controle de atitude.
+
+
+Alguns trabalhos importantes sobre controle e atitude de satélites já foram desenvolvidos, abordando temas que dialogam diretamente com o presente estudo. Na monografia de \cite{tavares2017}, o autor explora a construção de um protótipo para testes de atitude de satélites, cobrindo de forma detalhada a base teórica por trás da atitude, incluindo ângulos de Euler, quatérnions e matrizes de rotação. Esses conceitos são essenciais para explicar a determinação de atitude, sendo aplicados tanto no trabalho dele quanto no presente estudo. Ambos os projetos utilizam o mesmo sensor para aquisição de dados, o que evidencia uma proximidade nos métodos. No entanto, a diferença está na escolha da placa de desenvolvimento: enquanto o trabalho atual utiliza a ESP32, Tavares optou por outra placa, mas que segue uma abordagem de programação similar, facilitando a implementação dos algoritmos de controle.
+
+Além disso, o autor detalha como cada uma das ferramentas de atitude é empregada para determinar a orientação do satélite no espaço, explorando os cálculos matemáticos envolvidos, que incluem as transformações de coordenadas e a construção de matrizes de rotação. Embora o trabalho de Tavares tenha apresentado pequenos erros de precisão na fase de testes
+
+\begin{citacao}
+	"(...)Em relação aos resultados percebeu-se uma defasagem quando os
+	ângulos se afastam de zero, em comparação aos resultados dos potenciômetros. Embora
+	os erros observados se mantenham em uma faixa razoável, eles devem ser analisados.(...)"
+\end{citacao}
+
+ o projeto foi bem-sucedido ao atingir os objetivos propostos, demonstrando a eficácia da abordagem e confirmando a viabilidade de aplicação dos algoritmos desenvolvidos.
+ 
+\begin{citacao}
+	"(...)O desenvolvimento da plataforma vê-se que a atingiu o objetivo esperado. Foi
+	criado um dispositivo que simula de forma intuitiva a orientação de um corpo no espaço.
+	Isso graças a montagem usando de kimbal’s.(...)"
+\end{citacao}
+
+
+Um outro estudo em relação à isso, temos \cite{faustino2019}, que por sua vez, explora o controle de atitude sob uma perspectiva diferente, mas com objetivos relacionados à estabilidade de satélites. Mais especificamente ( Estudo e validação do sistema de controle de atitude em um eixo de um CubeSat 1U atuado por roda de reação para realização de apontamento e frenagem). Diferentemente do outro trabalho, este, usa-se o \textit{software} MATLAB 
+
+
+
+ O artigo de \cite{ferreira2008} complementa a discussão com um procedimento experimental detalhado sobre a determinação de atitude.
+
+%Alguns trabalho na área já foram escritos e tratam de temas muito semelhantes ao tema abordado neste trabalho. Na monografia \cite{tavares2017}, o autor aborda o tema de forma muito semelhante ao que será abordado neste trabalho em questão, falando sobre a atitude de satélites, construção de um protótipo de teste. Já em \cite{faustino2019} a autora aborda de um forma um pouco diferente sobre a atitude de satélites mas segue um ideal similar. Outro trabalho que segue a mesma linha de pesquisa e que traz alguns dados e informações importante é o artigo \cite{ferreira2008}.
+
+%Já para fundamentos teóricos sobre o assunto e a parte de modelagem matemática dos problemas, seguimos com alguns trabalhos relevantes para a área, como \cite{Wertz2012}, \cite{YANG2012198}, \cite{jia2013quaternions}, \cite{shuster1993}, \cite{silva2016}
+ 
 %A ESCREVER
 
 \chapter{Atitude de Satélites}\label{cap:atitude}
@@ -435,6 +465,7 @@ IDEIA DE ESCRITA
 \section{Ângulos de Euler}
 
 
+IDEIA DE ESCRITA
 
 
 
@@ -561,7 +592,7 @@ Dessa forma, o uso dessas duas plataformas complementares permitiu não apenas o
 %% ----------------------------------------------------------
 %% Referências bibliográficas
 %% ----------------------------------------------------------
-% troca nome de bibliografia para ``Referências''
+% troca nome de bibliografia para "Referências"
 \printbibliography[title=Referências]
 
 

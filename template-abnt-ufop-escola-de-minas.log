@@ -1,4 +1,4 @@
-This is LuaHBTeX, Version 1.18.0 (TeX Live 2024)  (format=lualatex 2024.8.13)  28 SEP 2024 17:46
+This is LuaHBTeX, Version 1.18.0 (TeX Live 2024)  (format=lualatex 2024.8.13)  29 SEP 2024 15:07
  restricted system commands enabled.
 **template-abnt-ufop-escola-de-minas.tex
 (./template-abnt-ufop-escola-de-minas.tex
@@ -1588,51 +1588,13 @@ warning  (pdf backend): ignoring duplicate destination with the name 'page.1'
 
 
 ]
-<folha-de-aprovacao.pdf, id=19, 597.19106pt x 845.07724pt>
-File: folha-de-aprovacao.pdf Graphic file (type pdf)
-<use folha-de-aprovacao.pdf>
-Package luatex.def Info: folha-de-aprovacao.pdf  used on input line 243.
-(luatex.def)             Requested size: 597.1896pt x 845.07518pt.
-File: folha-de-aprovacao.pdf Graphic file (type pdf)
-<use folha-de-aprovacao.pdf>
-Package luatex.def Info: folha-de-aprovacao.pdf  used on input line 243.
-(luatex.def)             Requested size: 597.1896pt x 845.07518pt.
-<folha-de-aprovacao.pdf, id=22, page=1, 597.19106pt x 845.07724pt>
-File: folha-de-aprovacao.pdf Graphic file (type pdf)
-<use folha-de-aprovacao.pdf, page 1>
-Package luatex.def Info: folha-de-aprovacao.pdf , page1 used on input line 243.
 
-(luatex.def)             Requested size: 597.1896pt x 845.07518pt.
-File: folha-de-aprovacao.pdf Graphic file (type pdf)
-<use folha-de-aprovacao.pdf, page 1>
-Package luatex.def Info: folha-de-aprovacao.pdf , page1 used on input line 243.
-
-(luatex.def)             Requested size: 597.21693pt x 845.11386pt.
-File: folha-de-aprovacao.pdf Graphic file (type pdf)
-<use folha-de-aprovacao.pdf, page 1>
-Package luatex.def Info: folha-de-aprovacao.pdf , page1 used on input line 243.
-
-(luatex.def)             Requested size: 597.21693pt x 845.11386pt.
-File: folha-de-aprovacao.pdf Graphic file (type pdf)
-<use folha-de-aprovacao.pdf, page 1>
-Package luatex.def Info: folha-de-aprovacao.pdf , page1 used on input line 243.
-
-(luatex.def)             Requested size: 597.21693pt x 845.11386pt.
-
-
-File: folha-de-aprovacao.pdf Graphic file (type pdf)
-<use folha-de-aprovacao.pdf, page 1>
-Package luatex.def Info: folha-de-aprovacao.pdf , page1 used on input line 243.
-
-(luatex.def)             Requested size: 597.21693pt x 845.11386pt.
 [2
 
 
-
-<./folha-de-aprovacao.pdf>]
+]
 
 [3
-
 
 ]
 
@@ -1642,69 +1604,60 @@ Package luatex.def Info: folha-de-aprovacao.pdf , page1 used on input line 243.
 
 [5
 
-]
+] (./template-abnt-ufop-escola-de-minas.lof)
 
 [6
 
-] (./template-abnt-ufop-escola-de-minas.lof)
+] (./template-abnt-ufop-escola-de-minas.lot)
 
 [7
 
-] (./template-abnt-ufop-escola-de-minas.lot)
+]
 
 [8
-
-]
-
-[9
-
-
-]
-
-[10
 
 
 ] (./template-abnt-ufop-escola-de-minas.toc)
 
-[11
+[9
 
 ]
-<figuras/Sputnik.jpg, id=169, 242.1045pt x 240.9pt>
+<figuras/Sputnik.jpg, id=127, 242.1045pt x 240.9pt>
 File: figuras/Sputnik.jpg Graphic file (type jpg)
 <use figuras/Sputnik.jpg>
-Package luatex.def Info: figuras/Sputnik.jpg  used on input line 351.
+Package luatex.def Info: figuras/Sputnik.jpg  used on input line 348.
 (luatex.def)             Requested size: 145.26382pt x 144.5411pt.
 Package microtype Info: Loading generic protrusion settings for font family
 (microtype)             `lmtt' (encoding: TU).
 (microtype)             For optimal results, create family-specific settings.
 (microtype)             See the microtype manual for details.
 
-Underfull \hbox (badness 10000) in paragraph at lines 353--353
+Underfull \hbox (badness 10000) in paragraph at lines 350--350
 [][][]$\TU/lmtt/m/n/10 https://www.esa.int/ESA_Multimedia/
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 353--353
+Underfull \hbox (badness 10000) in paragraph at lines 350--350
 \TU/lmtt/m/n/10 Images/2007/10/Sputnik_1_before_launch_
  []
 
 
 
-[12
+[10
 
 
 <./figuras/Sputnik.jpg>]
 
-[13]
-<figuras/foto1.png, id=209, 599.23875pt x 472.76625pt>
+[11]
+<figuras/foto1.png, id=169, 599.23875pt x 472.76625pt>
 File: figuras/foto1.png Graphic file (type png)
 <use figuras/foto1.png>
-Package luatex.def Info: figuras/foto1.png  used on input line 385.
+Package luatex.def Info: figuras/foto1.png  used on input line 382.
 (luatex.def)             Requested size: 227.5pt x 179.4799pt.
-<figuras/foto2.png, id=210, 603.75563pt x 477.28313pt>
+<figuras/foto2.png, id=170, 603.75563pt x 477.28313pt>
 File: figuras/foto2.png Graphic file (type png)
 <use figuras/foto2.png>
-Package luatex.def Info: figuras/foto2.png  used on input line 393.
+Package luatex.def Info: figuras/foto2.png  used on input line 390.
 (luatex.def)             Requested size: 227.5pt x 179.84009pt.
 
 
@@ -1712,59 +1665,70 @@ LaTeX Warning: `h' float specifier changed to `ht'.
 
 
 
-[14<./figuras/foto1.png>]
+[12<./figuras/foto1.png>]
 
-LaTeX Warning: Reference `cap:revisao-de-literatura' on page 15 undefined on in
-put line 421.
+[13<./figuras/foto2.png>]
 
+[14]
 
+[15
 
-[15<./figuras/foto2.png>]
+]
 
-[16]
-
-[17
+[16
 
 ]
 
 LaTeX Warning: No positions in optional float specifier.
-               Default added (so using `tbp') on input line 459.
+               Default added (so using `tbp') on input line 491.
 
 
 
-[18
+[17
 
 ]
-<figuras/altimu.jpg, id=247, 466.25807pt x 373.00645pt>
+<figuras/altimu.jpg, id=220, 466.25807pt x 373.00645pt>
 File: figuras/altimu.jpg Graphic file (type jpg)
 <use figuras/altimu.jpg>
-Package luatex.def Info: figuras/altimu.jpg  used on input line 486.
+Package luatex.def Info: figuras/altimu.jpg  used on input line 518.
 (luatex.def)             Requested size: 227.5pt x 182.0007pt.
 
 
-[19<./figuras/altimu.jpg>]
+[18<./figuras/altimu.jpg>]
 
-[20]
-<figuras/esp.jpg, id=264, 404.26031pt x 343.2825pt>
+[19]
+<figuras/esp.jpg, id=236, 404.26031pt x 343.2825pt>
 File: figuras/esp.jpg Graphic file (type jpg)
 <use figuras/esp.jpg>
-Package luatex.def Info: figuras/esp.jpg  used on input line 522.
+Package luatex.def Info: figuras/esp.jpg  used on input line 554.
 (luatex.def)             Requested size: 227.5pt x 193.18497pt.
 
-Underfull \hbox (badness 10000) in paragraph at lines 524--524
+Underfull \hbox (badness 10000) in paragraph at lines 556--556
 [][][]$\TU/lmtt/m/n/10 https://olddocs.zerynth.com/r2.3.3/official/board.zerynth
 .doit_esp32/docs/index.
  []
 
 
 
-[21<./figuras/esp.jpg>]
+[20<./figuras/esp.jpg>]
 
-[22]
+[21]
+! Misplaced alignment tab character &.
+<argument> Ciência &
+           Engenharia
+l.597 \printbibliography[title=Referências]
+                                          
+I can't figure out why you would want to use a tab mark
+here. If you just want an ampersand, the remedy is
+simple: Just type `I\&' now. But if some right brace
+up above has ended a previous alignment prematurely,
+you're probably due for more error messages, and you
+might try typing `S' now just to see what is salvageable.
+
 No file template-abnt-ufop-escola-de-minas.ind.
 
 
-[23
+[22
 
 ]
 \tf@lof=\write6
@@ -1797,15 +1761,15 @@ n.xml'.
 )
 
 Here is how much of LuaTeX's memory you used:
- 34433 strings out of 475910
+ 34418 strings out of 475910
  125081,1977958 words of node,token memory allocated
  1406 words of node memory still in use:
    8 hlist, 2 vlist, 2 rule, 1 local_par, 8 glue, 4 kern, 1 penalty, 3 glyph, 24
  attribute, 204 glue_spec, 14 attribute_list, 2 write, 4 pdf_action nodes
-   avail lists: 1:2,2:1033,3:564,4:149,5:328,6:62,7:6745,8:89,9:382,10:23,11:935
+   avail lists: 1:1,2:1252,3:753,4:173,5:328,6:70,7:6748,8:89,9:382,10:28,11:935
 ,12:1
- 56349 multiletter control sequences out of 65536+600000
- 85 fonts using 25469531 bytes
+ 56351 multiletter control sequences out of 65536+600000
+ 85 fonts using 25469431 bytes
  99i,20n,102p,1394b,2626s stack positions out of 10000i,1000n,20000p,200000b,200000s
 <d:/texlive/2024/texmf-dist/fonts/opentype/public/lm/lmmono12-regular.otf><d:/te
 xlive/2024/texmf-dist/fonts/opentype/public/lm/lmroman10-bolditalic.otf><d:/texl
@@ -1813,19 +1777,18 @@ ive/2024/texmf-dist/fonts/opentype/public/lm/lmroman10-italic.otf><d:/texlive/20
 24/texmf-dist/fonts/opentype/public/lm/lmmono10-regular.otf><d:/texlive/2024/tex
 mf-dist/fonts/opentype/public/lm/lmroman12-italic.otf><d:/texlive/2024/texmf-dis
 t/fonts/opentype/public/lm/lmromancaps10-regular.otf><d:/texlive/2024/texmf-dist
-/fonts/opentype/public/lm-math/latinmodern-math.otf><d:/texlive/2024/texmf-dist/
-fonts/opentype/public/lm/lmroman12-bold.otf><d:/texlive/2024/texmf-dist/fonts/op
-entype/public/lm/lmroman10-regular.otf><d:/texlive/2024/texmf-dist/fonts/opentyp
-e/public/lm/lmromanslant10-regular.otf><d:/texlive/2024/texmf-dist/fonts/opentyp
-e/public/lm/lmsans17-regular.otf><d:/texlive/2024/texmf-dist/fonts/opentype/publ
-ic/lm/lmsans10-bold.otf><d:/texlive/2024/texmf-dist/fonts/opentype/public/lm/lms
-ans12-regular.otf><d:/texlive/2024/texmf-dist/fonts/opentype/public/lm/lmroman12
--regular.otf>
-Output written on template-abnt-ufop-escola-de-minas.pdf (24 pages, 1571647 byte
+/fonts/opentype/public/lm/lmroman12-bold.otf><d:/texlive/2024/texmf-dist/fonts/o
+pentype/public/lm/lmroman10-regular.otf><d:/texlive/2024/texmf-dist/fonts/openty
+pe/public/lm/lmromanslant10-regular.otf><d:/texlive/2024/texmf-dist/fonts/openty
+pe/public/lm/lmsans17-regular.otf><d:/texlive/2024/texmf-dist/fonts/opentype/pub
+lic/lm/lmsans10-bold.otf><d:/texlive/2024/texmf-dist/fonts/opentype/public/lm/lm
+sans12-regular.otf><d:/texlive/2024/texmf-dist/fonts/opentype/public/lm/lmroman1
+2-regular.otf>
+Output written on template-abnt-ufop-escola-de-minas.pdf (23 pages, 1024185 byte
 s).
 
-PDF statistics: 479 PDF objects out of 1000 (max. 8388607)
- 381 compressed objects within 4 object streams
- 83 named destinations out of 1000 (max. 131072)
- 217 words of extra memory for PDF output out of 10000 (max. 100000000)
+PDF statistics: 448 PDF objects out of 1000 (max. 8388607)
+ 367 compressed objects within 4 object streams
+ 80 named destinations out of 1000 (max. 131072)
+ 209 words of extra memory for PDF output out of 10000 (max. 100000000)
 

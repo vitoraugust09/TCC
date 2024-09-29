@@ -1,17 +1,17 @@
 [0] Config.pm:308> INFO - This is Biber 2.20
 [0] Config.pm:311> INFO - Logfile is 'template-abnt-ufop-escola-de-minas.blg'
-[142] biber-MSWIN64:340> INFO - === 
-[185] Biber.pm:420> INFO - Reading 'template-abnt-ufop-escola-de-minas.bcf'
-[338] Biber.pm:994> INFO - Found 8 citekeys in bib section 0
-[356] Biber.pm:4463> INFO - Processing section 0
-[370] Biber.pm:4654> INFO - Looking for bibtex file 'referencias.bib' for section 0
-[434] bibtex.pm:1713> INFO - LaTeX decoding ...
-[478] bibtex.pm:1519> INFO - Found BibTeX data source 'referencias.bib'
-[563] UCollate.pm:68> INFO - Overriding locale 'pt-BR' defaults 'variable = shifted' with 'variable = non-ignorable'
-[563] UCollate.pm:68> INFO - Overriding locale 'pt-BR' defaults 'normalization = NFD' with 'normalization = prenormalized'
-[563] Biber.pm:4283> INFO - Sorting list 'nty/global//global/global/global' of type 'entry' with template 'nty' and locale 'pt-BR'
-[563] Biber.pm:4289> INFO - No sort tailoring available for locale 'pt-BR'
-[579] bbl.pm:676> INFO - Writing 'template-abnt-ufop-escola-de-minas.bbl' with encoding 'UTF-8'
-[585] bbl.pm:779> INFO - Output to template-abnt-ufop-escola-de-minas.bbl
-[585] Biber.pm:131> WARN - legacy month field 'sep' in entry 'jia2013quaternions' is not an integer - this will probably not sort properly.
-[585] Biber.pm:133> INFO - WARNINGS: 1
+[132] biber-MSWIN64:340> INFO - === 
+[171] Biber.pm:420> INFO - Reading 'template-abnt-ufop-escola-de-minas.bcf'
+[313] Biber.pm:994> INFO - Found 10 citekeys in bib section 0
+[330] Biber.pm:4463> INFO - Processing section 0
+[344] Biber.pm:4654> INFO - Looking for bibtex file 'referencias.bib' for section 0
+[401] bibtex.pm:1713> INFO - LaTeX decoding ...
+[425] bibtex.pm:1519> INFO - Found BibTeX data source 'referencias.bib'
+[534] UCollate.pm:68> INFO - Overriding locale 'pt-BR' defaults 'normalization = NFD' with 'normalization = prenormalized'
+[534] UCollate.pm:68> INFO - Overriding locale 'pt-BR' defaults 'variable = shifted' with 'variable = non-ignorable'
+[534] Biber.pm:4283> INFO - Sorting list 'nty/global//global/global/global' of type 'entry' with template 'nty' and locale 'pt-BR'
+[534] Biber.pm:4289> INFO - No sort tailoring available for locale 'pt-BR'
+[554] bbl.pm:676> INFO - Writing 'template-abnt-ufop-escola-de-minas.bbl' with encoding 'UTF-8'
+[561] bbl.pm:779> INFO - Output to template-abnt-ufop-escola-de-minas.bbl
+[562] Biber.pm:131> WARN - legacy month field 'sep' in entry 'jia2013quaternions' is not an integer - this will probably not sort properly.
+[562] Biber.pm:133> INFO - WARNINGS: 1

@@ -2462,16 +2462,20 @@
     <bcf:citekey order="6" intorder="1">YANG2012198</bcf:citekey>
     <bcf:citekey order="7" intorder="1">silva2016</bcf:citekey>
     <bcf:citekey order="8" intorder="1">tavares2017</bcf:citekey>
-    <bcf:citekey order="9" intorder="1">Polulu2024</bcf:citekey>
-    <bcf:citekey order="10" intorder="1">Polulu2024</bcf:citekey>
-    <bcf:citekey order="11" intorder="1">Polulu2024</bcf:citekey>
+    <bcf:citekey order="9" intorder="1">tavares2017</bcf:citekey>
+    <bcf:citekey order="10" intorder="1">faustino2019</bcf:citekey>
+    <bcf:citekey order="11" intorder="1">ferreira2008</bcf:citekey>
+    <bcf:citekey order="12" intorder="1">Polulu2024</bcf:citekey>
+    <bcf:citekey order="13" intorder="1">Polulu2024</bcf:citekey>
+    <bcf:citekey order="14" intorder="1">Polulu2024</bcf:citekey>
     <bcf:citekeycount count="1">shuster1993</bcf:citekeycount>
-    <bcf:citekeycount count="1">ferreira2008</bcf:citekeycount>
+    <bcf:citekeycount count="2">ferreira2008</bcf:citekeycount>
     <bcf:citekeycount count="1">Wertz2012</bcf:citekeycount>
     <bcf:citekeycount count="2">YANG2012198</bcf:citekeycount>
     <bcf:citekeycount count="1">jia2013quaternions</bcf:citekeycount>
     <bcf:citekeycount count="1">silva2016</bcf:citekeycount>
-    <bcf:citekeycount count="1">tavares2017</bcf:citekeycount>
+    <bcf:citekeycount count="2">tavares2017</bcf:citekeycount>
+    <bcf:citekeycount count="1">faustino2019</bcf:citekeycount>
     <bcf:citekeycount count="1">Polulu2024</bcf:citekeycount>
   </bcf:section>
   <!-- SORTING TEMPLATES -->
